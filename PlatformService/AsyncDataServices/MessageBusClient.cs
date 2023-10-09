@@ -9,12 +9,23 @@ namespace PlatformService.AsyncDataServices
     public class MessageBusClient : IMessageBusClient
     {
         private readonly IConfiguration _configuration;
-        private readonly IConnection _connection;
-        private readonly IModel _channel;
+        private IConnection _connection;
+        private IModel _channel;
 
         public MessageBusClient(IConfiguration configuration)
         {
             _configuration = configuration;
+
+            InitializeRabbitMQ();
+        }
+
+        private void RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e)
+        {
+            Console.WriteLine("--> RabbitMQ Connection Shutdown");
+        }
+
+        private void InitializeRabbitMQ()
+        {
             var factory = new ConnectionFactory
             {
                 HostName = _configuration["RabbitMQHost"],
@@ -33,15 +44,10 @@ namespace PlatformService.AsyncDataServices
                 Console.WriteLine("--> Connected to Message Bus");
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine($"--> Could not connect to the Message Bus: {ex.Message}");
             }
-        }
-
-        private void RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e)
-        {
-            Console.WriteLine("--> RabbitMQ Connection Shutdown");
         }
 
         private void SendMessage(string message)
