@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformService", "PlatformService\PlatformService.csproj", "{7C373AEB-EC5C-4EAB-AEA1-A408A1397D7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8S", "K8S", "{A43D9941-2BB5-4A16-8CC5-A69A202876AC}"
+	ProjectSection(SolutionItems) = preProject
+		commands-deployment.yaml = commands-deployment.yaml
+		ingress-service.yaml = ingress-service.yaml
+		local-persistentvolumeclaim.yaml = local-persistentvolumeclaim.yaml
+		mssql-platform-deployment.yaml = mssql-platform-deployment.yaml
+		platforms-deployment.yaml = platforms-deployment.yaml
+		platforms-nodeport-service.yaml = platforms-nodeport-service.yaml
+		rabbitmq-deployment.yaml = rabbitmq-deployment.yaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandService", "CommandService\CommandService.csproj", "{614DA3F8-CEDE-418C-916F-EFD8AD63D00A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C373AEB-EC5C-4EAB-AEA1-A408A1397D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C373AEB-EC5C-4EAB-AEA1-A408A1397D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C373AEB-EC5C-4EAB-AEA1-A408A1397D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C373AEB-EC5C-4EAB-AEA1-A408A1397D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{614DA3F8-CEDE-418C-916F-EFD8AD63D00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{614DA3F8-CEDE-418C-916F-EFD8AD63D00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{614DA3F8-CEDE-418C-916F-EFD8AD63D00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{614DA3F8-CEDE-418C-916F-EFD8AD63D00A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23250441-5214-49DE-85F7-AFCF33395967}
+	EndGlobalSection
+EndGlobal
