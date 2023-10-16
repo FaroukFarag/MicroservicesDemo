@@ -3,5 +3,22 @@
   <PropertyGroup>
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
+    <ActiveDebugProfile>CommandService</ActiveDebugProfile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <DevSpacesDebugProfileUserSetting Include="Bridge to Kubernetes">
+      <ClusterSource>KUBECONFIG</ClusterSource>
+      <ClusterName>docker-desktop</ClusterName>
+      <Context>docker-desktop</Context>
+      <Namespace>default</Namespace>
+      <ServiceName>command-clusterip-service</ServiceName>
+      <RoutingHeader>
+      </RoutingHeader>
+      <LaunchUrl>http://acme.com/api/c/platforms</LaunchUrl>
+      <LocalLaunchProfile>CommandService</LocalLaunchProfile>
+    </DevSpacesDebugProfileUserSetting>
+  </ItemGroup>
 </Project>

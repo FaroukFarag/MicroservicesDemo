@@ -56,3 +56,7 @@ D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService
 D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService\bin\Debug\net6.0\libman.json
 D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService\bin\Debug\net6.0\RabbitMQ.Client.dll
 D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService\bin\Debug\net6.0\System.Threading.Channels.dll
+D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService\bin\Debug\net6.0\Google.Protobuf.dll
+D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService\bin\Debug\net6.0\Grpc.Core.Api.dll
+D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService\bin\Debug\net6.0\Grpc.Net.Client.dll
+D:\Practices\Microservices Course - Les Jackson\MicroservicesDemo\CommandService\bin\Debug\net6.0\Grpc.Net.Common.dll

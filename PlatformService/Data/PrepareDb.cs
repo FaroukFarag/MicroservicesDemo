@@ -9,7 +9,7 @@ namespace PlatformService.Data
         {
             if(isProduction)
             {
-                Console.WriteLine("Attmepting to apply migrations...");
+                Console.WriteLine("--> Attmepting to apply migrations...");
 
                 try
                 {
